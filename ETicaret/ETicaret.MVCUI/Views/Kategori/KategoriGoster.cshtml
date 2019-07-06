@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ETicaret.DTO.KategoriDTO>
+@{
+    ViewBag.Title = "Deneme";
+}
+
+<h2>Kategoriler</h2>
+
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Kategori Adı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var kat in Model)
+        {
+        <tr>
+            <td> @Html.ActionLink(kat.KategoriAdi,"UrunleriGoster","Urun",new { id = kat.Id, kategoriAdi = kat.KategoriAdi},null)</td>
+        </tr>
+        }
+    </tbody>
+
+</table>

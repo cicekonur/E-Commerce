@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ETicaret.MVCUI.Models.UrunViewModel>
+
+
+<h2>@ViewBag.kategoriAdi</h2>
+
+
+
+@{
+// Aşağıdaki kodu admin panelinde değişim yapmak için kullan
+
+ }
+@*<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Urun Adı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var urun in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(urun.Urun.UrunAdi, "Edit", "Urun", new { urun.Urun.Id }, null)</td>
+            </tr>
+        }
+    </tbody>
+
+</table>*@
+
+
+
+@{ 
+    // TODO image path eklenecek,  //TODO Yukarıdaki linki geliştir, tıkladığında yeni sayfada ürünün detaylı bilgileri gelsin.
+}
+
+
+    <div class="card-columns">
+            @foreach (var item in Model)
+            {
+                <div class="card">
+                    <img src="@item.Urun.ResimYolu" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.ActionLink(item.Urun.UrunAdi, "UrunuGoster", "Urun", new { item.Urun.Id }, null)</h5>
+                        <p class="card-text">@item.Urun.Aciklama</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <small class="text-muted">@item.Urun.Fiyat</small>
+                    </div>
+                </div>
+            }
+    </div>
+
+

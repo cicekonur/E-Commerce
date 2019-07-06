@@ -1,0 +1,9 @@
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\bin\Debug\ETicaret.Entities.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\bin\Debug\ETicaret.Entities.pdb
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\bin\Debug\CommonType.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\bin\Debug\CommonType.pdb
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\obj\Debug\ETicaret.Entities.csprojAssemblyReference.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\obj\Debug\ETicaret.Entities.csproj.CoreCompileInputs.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\obj\Debug\ETicaret.Entities.csproj.CopyComplete
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\obj\Debug\ETicaret.Entities.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\ETicaret.Entities\obj\Debug\ETicaret.Entities.pdb

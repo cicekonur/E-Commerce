@@ -1,0 +1,18 @@
+﻿@model ETicaret.DTO.UrunDTO
+
+<div class="container pb-3 ">
+    <div class="card-deck col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <div class="card ">
+            <img src="@Model.ResimYolu" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Model.UrunAdi</h5>
+                <p class="card-text">@Model.Aciklama</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">@Model.Fiyat</small>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿@model ETicaret.MVCUI.Models.UrunViewModel
+
+@using (Html.BeginForm("Save", "Urun",FormMethod.Post,new { enctype="multipart/form-data"}))
+{
+    <div class="form-group">
+        @Html.LabelFor(i => i.Urun.UrunAdi)
+        @Html.TextBoxFor(i => i.Urun.UrunAdi, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Urun.UrunAdi)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.Urun.Aciklama)
+        @Html.TextAreaFor(i => i.Urun.Aciklama, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Urun.Aciklama)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(i => i.Urun.Fiyat)
+        @Html.TextBoxFor(i => i.Urun.Fiyat, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Urun.Fiyat)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(i => i.Urun.Stok)
+        @Html.TextBoxFor(i => i.Urun.Stok, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Urun.Stok)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(i => i.Urun.KategoriId)
+        @Html.DropDownListFor(i => i.Urun.KategoriId, new SelectList(Model.Kategoriler, "Id", "KategoriAdi"), "Kategori Seçin", new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Urun.Stok)
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(i => i.Urun.ResimDosyasi, new { type = "file"})
+    </div>
+    @Html.HiddenFor(i=>i.Urun.ResimYolu)
+    @Html.HiddenFor(i => i.Urun.EklemeTarihi)
+    @Html.HiddenFor(i => i.Urun.Id)
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+}
+
+@section scripts
+    {
+    @Scripts.Render("~/bundles/jqueryval");
+}
