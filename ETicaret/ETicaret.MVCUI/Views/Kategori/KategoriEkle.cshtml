@@ -1,0 +1,34 @@
+﻿@model ETicaret.MVCUI.Models.KategoriViewModel
+
+
+@{
+    ViewBag.Title = "KategoriGoster";
+}
+
+<h2>KategoriGoster</h2>
+
+
+
+@using (Html.BeginForm("KategoriEkle", "Kategori"))
+{
+    <div class="form-group">
+        @Html.LabelFor(i => i.Kategori.KategoriAdi)
+        @Html.TextBoxFor(i => i.Kategori.KategoriAdi, new { @class = "form-control" });
+        @Html.ValidationMessageFor(i => i.Kategori.KategoriAdi)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(i => i.Kategori.UstKategori)
+        @Html.DropDownListFor(i => i.Kategori.UstKategori, new SelectList(Model.Kategoriler, "Id", "KategoriAdi"), "Kategori Seçiniz", new { @class = "form-control" });
+        @Html.ValidationMessageFor(i => i.Kategori.UstKategori)
+    </div>
+    @Html.HiddenFor(i => i.Kategori.Id)
+    @Html.HiddenFor(i => i.Kategori.IsDeleted)
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+}
+
+
+
+@section scripts
+    {
+    @Scripts.Render("~/bundles/jqueryval");
+}

@@ -1,0 +1,14 @@
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\Core.dll.config
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\Core.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\Core.pdb
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\CommonType.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\EntityFramework.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\CommonType.pdb
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\EntityFramework.xml
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\obj\Debug\Core.csprojAssemblyReference.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\obj\Debug\Core.csproj.CopyComplete
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\obj\Debug\Core.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Core\obj\Debug\Core.pdb

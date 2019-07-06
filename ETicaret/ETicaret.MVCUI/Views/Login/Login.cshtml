@@ -1,0 +1,149 @@
+﻿@model ETicaret.MVCUI.Models.LoginViewModel
+
+<!--Modal: Login / Register Form-->
+<div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
+                        <i class="fas fa-user mr-1"></i>
+                        Giriş Yap
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
+                        <i class="fas fa-user-plus mr-1"></i>
+                        Kayıt Ol
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panels -->
+            <div class="tab-content">
+                <!--Panel 7-->
+                <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                    <!--Body-->
+                    <div class="modal-body mb-1">
+                        @*<div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">E-Mail</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">Şifre</label>
+                            </div>*@
+
+
+
+                        @using (Html.BeginForm("GirisYap", "Login", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            <div class="md-form form-sm mb-4">
+                                @Html.LabelFor(i => i.Login.EMail)
+                                @Html.TextBoxFor(i => i.Login.EMail, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(i => i.Login.EMail)
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                @Html.LabelFor(i => i.Login.Sifre)
+                                @Html.PasswordFor(i => i.Login.Sifre, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(i => i.Login.Sifre)
+                            </div>
+
+                            <div class="text-center mt-2">
+                                <button type="submit" class="btn btn-info">Giriş Yap <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+                        }
+
+                    </div>
+                    <!--Footer-->
+                    <div class="modal-footer">
+                        <div class="options text-center text-md-right mt-1">
+                            <p>Hâlâ üye değil misiniz? <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">Kayıt ol</a></p>
+                            <p>Şifremi Unuttum <a href="#" class="blue-text">Şifre?</a></p>
+                        </div>
+                        <div class=" waves-effect ml-auto" data-dismiss="modal"></div>
+                    </div>
+
+                </div>
+                <!--/.Panel 7-->
+                <!--Panel 8-->
+                <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        @*<div class="md-form form-sm mb-5">
+                                <i class="fas fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">E-Mail</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Şifre</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Şifre Tekrar</label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Kayıt Ol <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>*@
+
+
+
+                        @using (Html.BeginForm("KisiEkle", "Login"))
+                        {
+                            <div class="md-form form-sm mb-4">
+                                @Html.LabelFor(i => i.Login.EMail)
+                                @Html.TextBoxFor(i => i.Login.EMail, new { @class = "form-control form-control-sm validate" })
+                                @Html.ValidationMessageFor(i => i.Login.EMail)
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                @Html.LabelFor(i => i.Login.Sifre)
+                                @Html.PasswordFor(i => i.Login.Sifre, new { @class = "form-control form-control-sm validate" })
+                                @Html.ValidationMessageFor(i => i.Login.Sifre)
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                @Html.Label("Şifre Tekrar")
+                                @Html.PasswordFor(i => i.Login.Sifre, new { @class = "form-control form-control-sm validate" })
+                                @Html.ValidationMessageFor(i => i.Login.Sifre)
+                            </div>
+
+                            <div class="text-center mt-2">
+                                <button type="submit" class="btn btn-info">Kayıt Ol <i class="fas fa-sign-in ml-1"></i></button>
+                            </div>
+                        }
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer">
+                        <div class="options text-right">
+                            <p class="pt-1">Zaten bir hesabınız var mı? <a href="#panel7" class="blue-text">Giriş Yap</a></p>
+                        </div>
+                        <div type="button" class=" waves-effect ml-auto" data-dismiss="modal"></div>
+                    </div>
+                </div>
+                <!--/.Panel 8-->
+            </div>
+
+        </div>
+    </div>
+    <!--/.Content-->
+</div>

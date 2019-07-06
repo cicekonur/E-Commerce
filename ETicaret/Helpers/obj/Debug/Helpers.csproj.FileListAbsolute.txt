@@ -1,0 +1,6 @@
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Helpers\bin\Debug\Helpers.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Helpers\bin\Debug\Helpers.pdb
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Helpers\obj\Debug\Helpers.csprojAssemblyReference.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Helpers\obj\Debug\Helpers.csproj.CoreCompileInputs.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Helpers\obj\Debug\Helpers.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\Helpers\obj\Debug\Helpers.pdb

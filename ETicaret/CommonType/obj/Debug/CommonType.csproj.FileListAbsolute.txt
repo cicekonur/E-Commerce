@@ -1,0 +1,6 @@
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\CommonType\bin\Debug\CommonType.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\CommonType\bin\Debug\CommonType.pdb
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\CommonType\obj\Debug\CommonType.csprojAssemblyReference.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\CommonType\obj\Debug\CommonType.csproj.CoreCompileInputs.cache
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\CommonType\obj\Debug\CommonType.dll
+C:\Users\onur\Source\Workspaces\KardeslerEticaret\ETicaret\CommonType\obj\Debug\CommonType.pdb

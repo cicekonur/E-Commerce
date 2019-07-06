@@ -1,0 +1,18 @@
+﻿
+@model IEnumerable<ETicaret.DTO.KategoriDTO>
+
+<nav class="navbar navbar-dark indigo">
+    <div class="form-inline">
+        @foreach (var kat in Model)
+        {
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    @Html.ActionLink(kat.KategoriAdi, "UrunleriGoster", "Urun", new { id = kat.Id }, new { @class = "nav-link" })
+                </li>
+            </ul>
+        }
+    </div>
+</nav>
+
+
+    
